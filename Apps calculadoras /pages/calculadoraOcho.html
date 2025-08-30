@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora 8</title>
+        <link rel="stylesheet" href="../css/calculadoraOcho.css">
+        <script src="../js/calculadoraOcho.js"></script>
+    </head>
+
+    <body>
+        <header id="headerPage">
+            <div id="cajaBotonVolver">
+                <button class="botones" id="botonVolver"
+                    onclick="document.location.href='http://127.0.0.1:5500/menu.html'">Volver al
+                    menú</button>
+            </div>
+            <h1>Calculadora 8 <br> <small>Vigésimo enunciado.</small></h1 id="tituloPage">
+        </header>
+
+        <section id="sectionUnoPage">
+            <h2>Formulario de Nómina</h2>
+            <div id="cajaContenido">
+                <div id="cajaCalculadora">
+                    <form id="calculadora">
+                        <div class="cajasOR">
+                            <label for="identificacion">Identificación:</label>
+                            <input class="inputs" type="text" id="identificacion" required>
+                        </div>
+
+                        <div class="cajasOR">
+                            <label for="nombres">Nombres y Apellidos:</label>
+                            <input class="inputs" type="text" id="nombres" required>
+                        </div>
+
+                        <div class="cajasOR">
+                            <label for="salario">Salario:</label>
+                            <input class="inputs" type="number" id="salario" required min="877803">
+                        </div>
+
+                        <div class="cajasOR">
+                            <label for dias>Días trabajados (1 - 30):</label>
+                            <input class="inputs" type="number" id="dias" required min="1" max="30">
+                        </div>
+
+                        <div class="cajasOR">
+                            <label for="horasExtraDiurnas">Horas Extras Diurnas (0 - 30):</label>
+                            <input class="inputs" type="number" id="horasExtraDiurnas" required min="0" max="30">
+                        </div>
+
+                        <div class="cajasOR">
+                            <label for="horasExtraNocturnas">Horas Extras Nocturnas (0 - 30):</label>
+                            <input class="inputs" type="number" id="horasExtraNocturnas" required min="0" max="30">
+                        </div>
+
+                        <div id="cajaBotones">
+                            <button type="button" class="botones" onclick="calculadora()">Calcular Nómina</button>
+                            <button class="botones" onclick="limpiar()">Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="cajaResultados">
+                    <h3>Resultados de Nómina</h3><br>
+                    <div class="cajasOR">
+                        <h3>Identificación</h3>
+                        <p type="text" class="inputs" id="resultadoIdentificacion" readonly></p>
+                    </div>
+
+                    <div class="cajasOR">
+                        <h3>Nombres completos</h3>
+                        <p type="text" class="inputs" id="resultadoNombres" readonly></p>
+                    </div>
+
+                    <div class="cajasOR">
+                        <h3>Salario</h3>
+                        <p type="text" class="inputs" id="resultadoSalario" readonly></p>
+                    </div>
+
+                    <div class="cajasOR">
+                        <h3>Valor neto a pagar</h3>
+                        <p type="text" class="inputs" id="resultadoValorDePago" readonly></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footerPage">
+            <h4 id="copyright">@Jesus Ariel Geliz Nuñez - Politecnico Mayor</h4>
+        </footer>
+    </body>
+</html>

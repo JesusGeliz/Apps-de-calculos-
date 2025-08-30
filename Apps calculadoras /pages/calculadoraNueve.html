@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora 9</title>
+        <link rel="stylesheet" href="../css/calculadoraNueve.css">
+        <script src="../js/calculadoraNueve.js"></script>
+    </head>
+
+    <body>
+        <header id="headerPage">
+            <div id="cajaBotonVolver">
+                <button class="botones" id="botonVolver"
+                    onclick="document.location.href='http://127.0.0.1:5500/menu.html'">Volver al
+                    menú</button>
+            </div>
+            <h1>Calculadora 9 <br> <small>Vigésimoprimer enunciado.</small></h1 id="tituloPage">
+        </header>
+
+        <section id="sectionUnoPage">
+            <div id="cajaContenido">
+                <div id="cajaCalculadora">
+                    <div class="cajasOR">
+                        <label for="edad">Ingrese su edad</label><br>
+                        <input type="number" class="inputs" id="edad" placeholder="Ej: 1,13,25...">
+                    </div>
+
+                    <div class="cajasOR">
+                        <h3>Resultado</h3>
+                        <p type="text" class="inputs" id="resultado" readonly></p>
+                    </div>
+                    <div id="cajaBotones">
+                        <button class="botones" onclick="calculadora()">Calcular</button>
+                        <button class="botones" onclick="limpiar()">Limpiar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footerPage">
+            <h4 id="copyright">@Jesus Ariel Geliz Nuñez - Politecnico Mayor</h4>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora 5</title>
+        <link rel="stylesheet" href="../css/calculadoraCinco.css">
+        <script src="../js/calculadoraCinco.js"></script>
+    </head>
+
+    <body>
+        <header id="headerPage">
+            <div id="cajaBotonVolver">
+                <button class="botones" id="botonVolver"
+                    onclick="document.location.href='http://127.0.0.1:5500/menu.html'">Volver al
+                    menú</button>
+            </div>
+            <h1>Calculadora 5 <br> <small>Quinto enunciado.</small></h1 id="tituloPage">
+        </header>
+
+        <section id="sectionUnoPage">
+            <div id="cajaContenido">
+                <div id="cajaCalculadora">
+                    <div class="cajasOR">
+                        <label for="nombreUsuario">Ingrese su nombre</label>
+                        <input type="text" class="inputs" id="nombreUsuario" placeholder="Ej: Juan Rodriguez">
+                    </div>
+
+                    <div class="cajasOR">
+                        <label for="notaUno">Ingrese la primera nota</label>
+                        <input type="number" class="inputs" id="notaUno">
+                    </div>
+
+                    <div class="cajasOR">
+                        <label for="notaDos">Ingrese la segunda nota</label>
+                        <input type="number" class="inputs" id="notaDos">
+                    </div>
+
+                    <div class="cajasOR">
+                        <label for="notaTres">Ingrese la tercera nota</label>
+                        <input type="number" class="inputs" id="notaTres">
+                    </div>
+
+                    <div class="cajasOR">
+                        <label for="notaCuatro">Ingrese la cuarta nota</label>
+                        <input type="number" class="inputs" id="notaCuatro">
+                    </div>
+
+                    <div class="cajasOR">
+                        <label for="notaCinco">Ingrese la quinta nota</label>
+                        <input type="number" class="inputs" id="notaCinco">
+                    </div>
+
+                    <div class="cajasOR">
+                        <h3>Resultado</h3>
+                        <p class="inputs" id="resultado" readonly></p>
+                    </div>
+                    <div id="cajaBotones">
+                        <button class="botones" onclick="calculadora()">Calcular</button>
+                        <button class="botones" onclick="limpiar()">Limpiar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footerPage">
+            <h4 id="copyright">@Jesus Ariel Geliz Nuñez - Politecnico Mayor</h4>
+        </footer>
+    </body>
+</html>

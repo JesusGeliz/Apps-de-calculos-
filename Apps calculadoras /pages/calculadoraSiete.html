@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora 7</title>
+        <link rel="stylesheet" href="../css/calculadoraSiete.css">
+        <script src="../js/calculadoraSiete.js"></script>
+    </head>
+
+    <body>
+        <header id="headerPage">
+            <div id="cajaBotonVolver">
+                <button class="botones" id="botonVolver"
+                    onclick="document.location.href='http://127.0.0.1:5500/menu.html'">Volver al
+                    menú</button>
+            </div>
+            <h1>Calculadora 7 <br> <small>Decimonoveno enunciado.</small></h1 id="tituloPage">
+        </header>
+
+        <section id="sectionUnoPage">
+            <div id="cajaContenido">
+                <div id="cajaCalculadora">
+                    <div class="cajasOR">
+                        <label for="cadenaUno">Ingrese el primer texto</label><br>
+                        <input type="text" class="inputs" id="cadenaUno" placeholder="Ej: Hola mundo!"></input>
+                    </div>
+
+                    <div class="cajasOR">
+                        <label for="cadenaDos">Ingrese el segundo texto</label><br>
+                        <input type="text" class="inputs" id="cadenaDos"></input>
+                    </div>
+
+                    <div class="cajasOR">
+                        <label for="cadenaTres">Ingrese el tercer texto</label><br>
+                        <input type="text" class="inputs" id="cadenaTres"></input>
+                    </div>
+
+                    <div class="cajasOR">
+                        <h3>Resultado</h3>
+                        <p type="text" class="inputs" id="resultado" readonly></p>
+                    </div>
+
+                    <div id="cajaBotones">
+                        <button class="botones" onclick="calculadora()">Calcular</button>
+                        <button class="botones" onclick="limpiar()">Limpiar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footerPage">
+            <h4 id="copyright">@Jesus Ariel Geliz Nuñez - Politecnico Mayor</h4>
+        </footer>
+    </body>
+</html>
